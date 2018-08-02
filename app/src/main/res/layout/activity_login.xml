@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15px"
+        android:padding="20dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:hint="@string/et_email"
+            android:inputType="textEmailAddress"
+            android:nextFocusDown="@+id/passwordEditText"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/colorDivider"
+            android:textSize="20sp"
+            android:contentDescription="Enter your email"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:hint="@string/et_password"
+            android:inputType="textPassword"
+            android:nextFocusDown="@+id/passwordEditText"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/colorDivider"
+            android:textSize="20sp"
+            android:contentDescription="Enter your password"/>
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/sign_in"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorTextIcons"
+            android:contentDescription="Tap to login"/>
+
+
+        <TextView
+            android:id="@+id/registerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:fontFamily="@font/catamaran_bold"
+            android:text="Need Account? Sign up here!"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextIcons"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            android:contentDescription="Need Account? Sign up here!"/>
+
+        <TextView
+            android:id="@+id/anonymousTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:fontFamily="@font/catamaran_bold"
+            android:text="Use the app without Signing in"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:contentDescription="Use the app without Signing in"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/archivo_black"
+        android:text="L O G I N"
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:id="@+id/loginTitle"/>
+
+    <ImageView
+        android:id="@+id/er_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_above="@+id/loginTitle"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="EyeRead logo"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/logo"
+        android:visibility="visible" />
+
+</RelativeLayout>

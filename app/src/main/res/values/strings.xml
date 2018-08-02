@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">EyeRead</string>
+    <string name="action_settings">Settings</string>
+    <string name="loading_message">Uploading image. Please wait.</string>
+
+    <string name="dialog_select_prompt">Choose a picture</string>
+    <string name="dialog_select_image">Image</string>
+    <string name="dialog_select_text">Text</string>
+
+    <string name="image_picker_error">Something is wrong with that image. Pick a different one please.</string>
+
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textview">Image Text Result Here</string>
+    <string name="et_email">Email</string>
+    <string name="et_password">Password</string>
+    <string name="log_in">Log in</string>
+    <string name="title_activity_login">Login</string>
+    <string name="Registration"> Registration</string>
+    <string name="signing_out">Signing out</string>
+    <string name="sign_in">Sign In</string>
+    <string name="already_have_account_tap_here">Already have account? Tap here!</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+</resources>
